@@ -7,9 +7,9 @@ namespace Minuta.App.Persistencia
     {
         IEnumerable<Visitante> GetAllVisitante();
 
-        Persona AddVisitante(Visitante visitante);
-        Persona GetVisitante(int idVisitante);
-        Persona UpdateVisitante(Visitante visitante);
+        Visitante AddVisitante(Visitante visitante);
+        Visitante GetVisitante(int idVisitante);
+        Visitante UpdateVisitante(Visitante visitante);
         void DeleteVisitante(int idVisitante);
     }
 }

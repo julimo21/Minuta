@@ -16,26 +16,28 @@ namespace Minuta.App.Persistencia
         {
             return appcox.vis;
         }
-        Persona IRepositorioVisitante.AddVisitante(Minuta.App.Dominio.Visitante visitante)
+        Visitante IRepositorioVisitante.AddVisitante(Minuta.App.Dominio.Visitante visitante)
         {
             var AgregarVisitante = appcox.vis.Add(visitante);
             appcox.SaveChanges();
 
             return AgregarVisitante.Entity;
         }
-        Persona IRepositorioVisitante.GetVisitante(int idVisitante)
+        Visitante IRepositorioVisitante.GetVisitante(int idVisitante)
         {
             return appcox.vis.FirstOrDefault(v => v.id == idVisitante);
         }
-        Persona IRepositorioVisitante.UpdateVisitante(Minuta.App.Dominio.Visitante visitante)
+        Visitante IRepositorioVisitante.UpdateVisitante(Minuta.App.Dominio.Visitante visitante)
         {
             var VisitanteEncontrar = appcox.vis.FirstOrDefault(v => v.id == visitante.id);
 
             if(VisitanteEncontrar != null)
             {
+                //campos que vienen de persona
                 VisitanteEncontrar.nombre = visitante.nombre;
                 VisitanteEncontrar.apellidos = visitante.apellidos;
                 VisitanteEncontrar.cedula = visitante.cedula;
+                //campos que vienen de visitante
                 VisitanteEncontrar.numApartamentoVis = visitante.numApartamentoVis;
 
                 appcox.SaveChanges();                
