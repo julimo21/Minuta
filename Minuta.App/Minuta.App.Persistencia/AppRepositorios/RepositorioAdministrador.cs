@@ -42,8 +42,8 @@ namespace Minuta.App.Persistencia
                 AdministradorEncontrar.contrasena = administrador.contrasena;
                 AdministradorEncontrar.tipo = administrador.tipo;
                 //campos que vienen de administrador
-                AdministradorEncontrar.empresa = administrador.empresa;
-                AdministradorEncontrar.turno = administrador.turno;
+                AdministradorEncontrar.celularAdm = administrador.celularAdm;
+                AdministradorEncontrar.correoAdm = administrador.correoAdm;
 
                 appcox.SaveChanges();                
             }

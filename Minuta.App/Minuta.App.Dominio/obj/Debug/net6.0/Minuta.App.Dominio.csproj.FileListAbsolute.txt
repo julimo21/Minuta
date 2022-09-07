@@ -10,3 +10,15 @@ C:\MinutaJejanSystem\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\Minuta.App.D
 C:\MinutaJejanSystem\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\refint\Minuta.App.Dominio.dll
 C:\MinutaJejanSystem\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\Minuta.App.Dominio.pdb
 C:\MinutaJejanSystem\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\ref\Minuta.App.Dominio.dll
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\bin\Debug\net6.0\Minuta.App.Dominio.deps.json
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\bin\Debug\net6.0\Minuta.App.Dominio.dll
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\bin\Debug\net6.0\Minuta.App.Dominio.pdb
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\Minuta.App.Dominio.csproj.AssemblyReference.cache
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\Minuta.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\Minuta.App.Dominio.AssemblyInfoInputs.cache
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\Minuta.App.Dominio.AssemblyInfo.cs
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\Minuta.App.Dominio.csproj.CoreCompileInputs.cache
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\Minuta.App.Dominio.dll
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\refint\Minuta.App.Dominio.dll
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\Minuta.App.Dominio.pdb
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Dominio\obj\Debug\net6.0\ref\Minuta.App.Dominio.dll
