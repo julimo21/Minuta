@@ -33,9 +33,11 @@ namespace Minuta.App.Persistencia
 
             if(VisitanteEncontrar != null)
             {
+                //campos que vienen de persona
                 VisitanteEncontrar.nombre = visitante.nombre;
                 VisitanteEncontrar.apellidos = visitante.apellidos;
                 VisitanteEncontrar.cedula = visitante.cedula;
+                //campos que vienen de visitante
                 VisitanteEncontrar.numApartamentoVis = visitante.numApartamentoVis;
 
                 appcox.SaveChanges();                

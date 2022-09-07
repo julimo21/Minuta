@@ -3,13 +3,13 @@ using Minuta.App.Dominio;
 
 namespace Minuta.App.Persistencia
 {
-    public interface IRepositorioVisitante
+    public interface IRepositorioVigilante
     {
-        IEnumerable<Visitante> GetAllVisitante();
+        IEnumerable<Vigilante> GetAllVigilante();
 
-        Visitante AddVisitante(Visitante visitante);
-        Visitante GetVisitante(int idVisitante);
-        Visitante UpdateVisitante(Visitante visitante);
-        void DeleteVisitante(int idVisitante);
+        Vigilante AddVigilante(Vigilante vigilante);
+        Vigilante GetVigilante(int idVigilante);
+        Vigilante UpdateVigilante(Vigilante vigilante);
+        void DeleteVigilante(int idVigilante);
     }
 }
