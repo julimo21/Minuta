@@ -6,51 +6,54 @@ namespace Minuta.App.Consola
 {
     internal class Program
     {
-        private static IRepositorioPersona _repoPersona = new RepositorioPersona(new Minuta.App.Persistencia.AppContext());
+        private static IRepositorioVisitante _repoVisitante = new RepositorioVisitante(new Minuta.App.Persistencia.AppContext());
         private static void Main(string[] args)
         {
             Console.WriteLine("Hola para todos");            
-            //AddPersona();
-            //BuscarPersona(5);
-            //EliminarPersona(6);
-            UpdatePersona(1);
+            //AddVisitante();
+            //BuscarVisitante(5);
+            //EliminarVisitante(6);
+            UpdateVisitante(1);
             
         }
 
-        private static void AddPersona()
+        private static void AddVisitante()
         {
-            Console.WriteLine("Escriba su nombre:");
+            Console.WriteLine("Digite su nombre:");
             string nom = Console.ReadLine();
-            Console.WriteLine("Escriba su apellido:");
+            Console.WriteLine("Digite su apellido:");
             string ape = Console.ReadLine();
-            Console.WriteLine("Escriba su cedula:");
+            Console.WriteLine("Digite su cedula:");
             string ced = Console.ReadLine();
-            var persona = new Persona
+            Console.WriteLine("Digite el numero de apartamento a visitar:");
+            string num = Console.ReadLine();
+            var visitante = new Visitante
             {
                 nombre = nom,
                 apellidos = ape,
-                cedula = ced
+                cedula = ced,
+                numApartamentoVis = num
             };
 
-            _repoPersona.AddPersona(persona);
+            _repoVisitante.AddVisitante(visitante);
         }
 
-        private static void BuscarPersona(int idp)
+        private static void BuscarVisitante(int idv)
         {
-            var pers = _repoPersona.GetPersona(idp);
-            Console.WriteLine(pers.nombre + " " + pers.apellidos + " - C.C. " + pers.cedula);
+            var visi = _repoVisitante.GetVisitante(idv);
+            Console.WriteLine("Visitante: "+ visi.nombre + " " + visi.apellidos + " C.C. " + visi.cedula);
         }
 
-        private static void EliminarPersona(int idp)
+        private static void EliminarVisitante(int idv)
         {
-            _repoPersona.DeletePersona(idp);
-            Console.WriteLine("Persona eliminada correctamente.");
+            _repoVisitante.DeleteVisitante(idv);
+            Console.WriteLine("Visitante eliminado correctamente.");
         }
 
-        private static void UpdatePersona(int idp)
+        private static void UpdateVisitante(int idv)
         {
-            var pers = _repoPersona.GetPersona(idp);
-            if (pers != null)
+            var visi = _repoVisitante.GetVisitante(idv);
+            if (visi != null)
             {
                 
             }
@@ -60,6 +63,8 @@ namespace Minuta.App.Consola
             string ape = Console.ReadLine();
             Console.WriteLine("Escriba su cedula:");
             string ced = Console.ReadLine();
+            Console.WriteLine("Digite el numero de apartamento a visitar:");
+            string num = Console.ReadLine();
             /*var persona = new Persona
             {
                 nombre = nom,
