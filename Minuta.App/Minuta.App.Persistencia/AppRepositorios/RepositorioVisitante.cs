@@ -16,18 +16,18 @@ namespace Minuta.App.Persistencia
         {
             return appcox.vis;
         }
-        Persona IRepositorioVisitante.AddVisitante(Minuta.App.Dominio.Visitante visitante)
+        Visitante IRepositorioVisitante.AddVisitante(Minuta.App.Dominio.Visitante visitante)
         {
             var AgregarVisitante = appcox.vis.Add(visitante);
             appcox.SaveChanges();
 
             return AgregarVisitante.Entity;
         }
-        Persona IRepositorioVisitante.GetVisitante(int idVisitante)
+        Visitante IRepositorioVisitante.GetVisitante(int idVisitante)
         {
             return appcox.vis.FirstOrDefault(v => v.id == idVisitante);
         }
-        Persona IRepositorioVisitante.UpdateVisitante(Minuta.App.Dominio.Visitante visitante)
+        Visitante IRepositorioVisitante.UpdateVisitante(Minuta.App.Dominio.Visitante visitante)
         {
             var VisitanteEncontrar = appcox.vis.FirstOrDefault(v => v.id == visitante.id);
 

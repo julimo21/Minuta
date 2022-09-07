@@ -9,12 +9,12 @@ namespace Minuta.App.Consola
         private static IRepositorioVisitante _repoVisitante = new RepositorioVisitante(new Minuta.App.Persistencia.AppContext());
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hola para todos");            
+            Console.WriteLine("Hola para todos");
             //AddVisitante();
             //BuscarVisitante(5);
             //EliminarVisitante(6);
-            UpdateVisitante(1);
-            
+            UpdateVisitante(7);
+
         }
 
         private static void AddVisitante()
@@ -41,7 +41,7 @@ namespace Minuta.App.Consola
         private static void BuscarVisitante(int idv)
         {
             var visi = _repoVisitante.GetVisitante(idv);
-            Console.WriteLine("Visitante: "+ visi.nombre + " " + visi.apellidos + " C.C. " + visi.cedula);
+            Console.WriteLine("Visitante: " + visi.nombre + " " + visi.apellidos + " C.C. " + visi.cedula);
         }
 
         private static void EliminarVisitante(int idv)
@@ -55,9 +55,25 @@ namespace Minuta.App.Consola
             var visi = _repoVisitante.GetVisitante(idv);
             if (visi != null)
             {
+                Console.WriteLine("Escriba su nombre:");
+                string nom = Console.ReadLine();
+                Console.WriteLine("Escriba su apellido:");
+                string ape = Console.ReadLine();
+                Console.WriteLine("Escriba su cedula:");
+                string ced = Console.ReadLine();
+                Console.WriteLine("Digite el numero de apartamento a visitar:");
+                string num = Console.ReadLine();
+
+                visi.nombre = nom;
+                visi.apellidos = ape;
+                visi.cedula = ced;
+                visi.numApartamentoVis = num;
                 
+                _repoVisitante.UpdateVisitante(visi);
             }
-            Console.WriteLine("Escriba su nombre:");
+
+
+            /*Console.WriteLine("Escriba su nombre:");
             string nom = Console.ReadLine();
             Console.WriteLine("Escriba su apellido:");
             string ape = Console.ReadLine();
