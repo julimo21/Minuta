@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using Minuta.App.Dominio;
+using Minuta.App.Persistencia;
 
-namespace Minuta.App.Persistencia
+namespace Minuta.App.Persistencia.AppRepositorios
 {
     public class RepositorioVehiculo:IRepositorioVehiculo
     {

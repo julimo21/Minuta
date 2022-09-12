@@ -1,7 +1,17 @@
+using Minuta.App.Persistencia;
+using Minuta.App.Persistencia.AppRepositorios;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+//builder.Services.AddSingleton<IRepositorioAdministrador, RepositorioAdministrador>();
+//builder.Services.AddSingleton<IRepositorioVigilante, RepositorioVigilante>();
+//builder.Services.AddSingleton<IRepositorioResidente, RepositorioResidente>();
+//builder.Services.AddSingleton<IRepositorioVisitante, RepositorioVisitante>();
+//builder.Services.AddSingleton<IRepositorioVehiculo, RepositorioVehiculo>();
+builder.Services.AddSingleton<IRepositorioPrueba, RepositorioPrueba>();
 
 var app = builder.Build();
 

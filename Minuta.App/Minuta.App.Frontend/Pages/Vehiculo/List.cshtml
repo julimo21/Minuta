@@ -1,0 +1,26 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.ListModel
+@{
+}
+<h1>Listado de Vehículos</h1>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>PLACA</th>
+        <th>TIPO</th>
+    </tr>
+    @foreach (var vehiculo in Model.Vehiculo)
+    {
+        <tr>
+            <td>@vehiculo.placa</td>
+            <td>@vehiculo.tipoVehiculo</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-saludoId="@vehiculo.Id">
+                <i class="fas fa-info-circle"></i>
+                Detalle Vehiculo
+                </a>
+            </td>
+        </tr>
+    }
+</table>
