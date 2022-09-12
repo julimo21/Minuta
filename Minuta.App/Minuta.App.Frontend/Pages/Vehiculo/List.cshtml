@@ -9,14 +9,15 @@
         <th>PLACA</th>
         <th>TIPO</th>
     </tr>
-    @foreach (var vehiculo in Model.Vehiculo)
+    @foreach (var vehiculo in Model.Vehiculos)
     {
         <tr>
+            <td>@vehiculo.id</td>
             <td>@vehiculo.placa</td>
             <td>@vehiculo.tipoVehiculo</td>
             
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-saludoId="@vehiculo.Id">
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-vehiculoId="@vehiculo.id">
                 <i class="fas fa-info-circle"></i>
                 Detalle Vehiculo
                 </a>
