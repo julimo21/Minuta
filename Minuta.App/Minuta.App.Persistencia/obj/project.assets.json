@@ -2025,19 +2025,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\njzm0\\.nuget\\packages\\": {}
+    "C:\\Users\\Juliana Mora\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Persistencia\\Minuta.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Persistencia\\Minuta.App.Persistencia.csproj",
       "projectName": "Minuta.App.Persistencia",
-      "projectPath": "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Persistencia\\Minuta.App.Persistencia.csproj",
-      "packagesPath": "C:\\Users\\njzm0\\.nuget\\packages\\",
-      "outputPath": "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Persistencia\\obj\\",
+      "projectPath": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Persistencia\\Minuta.App.Persistencia.csproj",
+      "packagesPath": "C:\\Users\\Juliana Mora\\.nuget\\packages\\",
+      "outputPath": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\njzm0\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Juliana Mora\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -2049,8 +2049,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj": {
-              "projectPath": "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj"
+            "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj": {
+              "projectPath": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj"
             }
           }
         }
