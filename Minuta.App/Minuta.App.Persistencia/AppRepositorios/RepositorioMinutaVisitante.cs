@@ -6,12 +6,13 @@ namespace Minuta.App.Persistencia.AppRepositorios
 {
     public class RepositorioMinutaVisitante:IRepositorioMinutaVisitante
     {
-        private readonly AppContext appcox;
+        /*private readonly AppContext appcox;
 
         public RepositorioMinutaVisitante(AppContext appContext)
         {
             appcox = appContext;
-        }
+        }*/
+        private AppContext appcox = new AppContext();
         IEnumerable<MinutaVisitante> IRepositorioMinutaVisitante.GetAllMinutaVisitante()
         {
             return appcox.minVis;

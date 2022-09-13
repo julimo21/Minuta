@@ -8,15 +8,15 @@ namespace Minuta.App.Frontend.Pages
 {
     public class ListModel : PageModel
     {
-        private readonly IRepositorioPrueba repositorioPrueba;
+        private readonly IRepositorioVehiculo repositorioVehiculo;
         public IEnumerable<Minuta.App.Dominio.Vehiculo> Vehiculos{get;set;}
-        public ListModel(IRepositorioPrueba repositorioPrueba)
+        public ListModel(IRepositorioVehiculo repositorioVehiculo)
         {
-            this.repositorioPrueba = repositorioPrueba;
+            this.repositorioVehiculo = repositorioVehiculo;
         }
         public void OnGet()
         {
-            Vehiculos = repositorioPrueba.GetAll();
+            Vehiculos = repositorioVehiculo.GetAllVehiculo();
         }
     }
 }

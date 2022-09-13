@@ -6,12 +6,13 @@ namespace Minuta.App.Persistencia
 {
     public class RepositorioAdministrador:IRepositorioAdministrador
     {
-        private readonly AppContext appcox;
+        /*private readonly AppContext appcox;
 
         public RepositorioAdministrador(AppContext appContext)
         {
             appcox = appContext;
-        }
+        }*/
+        private AppContext appcox = new AppContext();
         IEnumerable<Administrador> IRepositorioAdministrador.GetAllAdministrador()
         {
             return appcox.adm;

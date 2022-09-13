@@ -6,12 +6,13 @@ namespace Minuta.App.Persistencia
 {
     public class RepositorioMinutaVehiculoResidentes:IRepositorioMinutaVehiculoResidentes
     {
-        private readonly AppContext appcox;
+        /*private readonly AppContext appcox;
 
         public RepositorioMinutaVehiculoResidentes(AppContext appContext)
         {
             appcox = appContext;
-        }
+        }*/
+        private AppContext appcox = new AppContext();
         IEnumerable<MinutaVehiculoResidentes> IRepositorioMinutaVehiculoResidentes.GetAllMinutaVehiculoResidentes()
         {
             return appcox.minVehRes;

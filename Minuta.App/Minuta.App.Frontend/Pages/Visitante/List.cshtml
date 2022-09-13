@@ -1,10 +1,40 @@
 ﻿@page
-@model Minuta.App.Frontend.Pages.ListModel
+@model Minuta.App.Frontend.Pages.ListModel1
 @{
 }
 <h1>Listado de Visitantes</h1>
 <table class="table">
     <tr>
         <th>ID</th>
+        <th>NOMBRE</th>
+        <th>APELLIDOS</th>
+        <th>CÉDULA</th>
+        <th>NÚMERO DE APARTAMENTO</th>
     </tr>
+    @foreach (var visitante in Model.Visitantes)
+    {
+        <tr>
+            <td>@visitante.id</td>
+            <td>@visitante.nombre</td>
+            <td>@visitante.apellidos</td>
+            <td>@visitante.cedula</td>
+            <td>@visitante.numApartamentoVis</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-visitanteId="@visitante.id">
+                <i class="fas fa-info-circle"></i>
+                Detalle Visitante
+                </a>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-visitanteId="@visitante.id">
+                <i class="fas fa-info-circle"></i>
+                Editar
+                </a>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-visitanteId="@visitante.id">
+                <i class="fas fa-info-circle"></i>
+                Eliminar
+                </a>
+            </td>
+            
+        </tr>
+    }
 </table>

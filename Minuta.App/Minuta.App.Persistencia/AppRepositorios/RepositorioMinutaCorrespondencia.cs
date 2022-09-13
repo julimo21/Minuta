@@ -6,12 +6,13 @@ namespace Minuta.App.Persistencia.AppRepositorios
 {
     public class RepositorioMinutaCorrespondencia:IRepositorioMinutaCorrespondencia
     {
-        private readonly AppContext appcox;
+        /*private readonly AppContext appcox;
 
         public RepositorioMinutaCorrespondencia(AppContext appContext)
         {
             appcox = appContext;
-        }
+        }*/
+        private AppContext appcox = new AppContext();
         IEnumerable<MinutaCorrespondencia> IRepositorioMinutaCorrespondencia.GetAllMinutaCorrespondencia()
         {
             return appcox.minCor;
