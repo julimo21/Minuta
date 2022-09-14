@@ -15,9 +15,16 @@ namespace Minuta.App.Frontend.Pages
         {
             this.repositorioVehiculo = repositorioVehiculo;
         }
-        public IActionResult OnGet(int vehiculoId)
+        public IActionResult OnGet(int? vehiculoId)
         {
-            Vehiculo = repositorioVehiculo.GetVehiculo(vehiculoId);
+            if (vehiculoId.HasValue)
+            {
+                Vehiculo = repositorioVehiculo.GetVehiculo(vehiculoId.Value);
+            }
+            else
+            {
+                Vehiculo = new Vehiculo();
+            }
             if(Vehiculo == null)
             {
                 return RedirectToPage("./NotFound");
@@ -27,7 +34,14 @@ namespace Minuta.App.Frontend.Pages
         }
         public IActionResult OnPost()
         {
-            Vehiculo = repositorioVehiculo.UpdateVehiculo(Vehiculo);            
+            if(Vehiculo.id > 0)
+            {
+                Vehiculo = repositorioVehiculo.UpdateVehiculo(Vehiculo);  
+            }
+            else
+            {
+                repositorioVehiculo.AddVehiculo(Vehiculo);        
+            }         
             return Page();
         }
     }
