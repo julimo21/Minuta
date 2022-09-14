@@ -23,7 +23,7 @@ namespace Minuta.App.Frontend.Pages
             }
             else
             {
-                Vehiculo = new Vehiculo();
+                Vehiculo = new Minuta.App.Dominio.Vehiculo();
             }
             if(Vehiculo == null)
             {
