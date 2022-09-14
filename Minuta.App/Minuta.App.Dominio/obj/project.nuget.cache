@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iaGQbTzNmFT7TvwCWLAMgJ9VFRDq6abpzNQOl2xKT5TPK4+HgvVjGKrljNqrR7gdCEG+tRQJfl3uWkMmK2yPNw==",
+  "dgSpecHash": "xb1NRIXQuDHakAl6mTpsSgxEVTfK0v2g4XU2oU6mCqHEre4IxGcDBPs9ZV1wb+w1zYr/8LPbakDi6xmZodJtmw==",
   "success": true,
-  "projectFilePath": "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj",
+  "projectFilePath": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
