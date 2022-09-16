@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rM0PkpIPfSUbz2h8It5m7zXK85t6U4Tgp2gD3Dqo0djkABUg0ZWg3saNQtR1NrOt/XUwrNXXWBc03ojlwZM1gw==",
+  "dgSpecHash": "1NBib3JdArjcmy5+3aukAXU3zfQvFRisTRkCi2be0Ooot1t7Cr1+vQ6oDAE6U19DBdSaAnaTteIW8O1/mk1q4g==",
   "success": true,
-  "projectFilePath": "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj",
+  "projectFilePath": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\njzm0\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\Juliana Mora\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

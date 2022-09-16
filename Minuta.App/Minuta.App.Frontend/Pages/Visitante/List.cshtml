@@ -3,6 +3,7 @@
 @{
 }
 <h1>Listado de Visitantes</h1>
+<a asp-page="./Add" class="btn btn-primary">Agregar Visitante</a><br><br>
 <table class="table">
     <tr>
         <th>ID</th>
@@ -29,7 +30,7 @@
                 <i class="fas fa-info-circle"></i>
                 Editar
                 </a>
-                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-visitanteId="@visitante.id">
+                <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-visitanteId="@visitante.id">
                 <i class="fas fa-info-circle"></i>
                 Eliminar
                 </a>

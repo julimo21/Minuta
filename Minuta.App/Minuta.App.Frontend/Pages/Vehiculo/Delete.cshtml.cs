@@ -20,14 +20,14 @@ namespace Minuta.App.Frontend.Pages
             Vehiculo = repositorioVehiculo.GetVehiculo(vehiculoId);
             if(Vehiculo == null)
             {
-                return RedirectToPage("./NotFound");
+                return RedirectToPage("./List");
             }
             else
             return Page();
         }
-        public IActionResult OnPost()
+        public IActionResult OnPost(int vehiculoId)
         {
-            repositorioVehiculo.DeleteVehiculo(Vehiculo.id);            
+            repositorioVehiculo.DeleteVehiculo(vehiculoId);            
             return Page();
         }
     }

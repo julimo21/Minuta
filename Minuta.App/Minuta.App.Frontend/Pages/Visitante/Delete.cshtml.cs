@@ -6,12 +6,12 @@ using Minuta.App.Persistencia.AppRepositorios;
 
 namespace Minuta.App.Frontend.Pages
 {
-    public class EditModel1 : PageModel
+    public class DeleteModel1 : PageModel
     {
         private readonly IRepositorioVisitante repositorioVisitante;
         [BindProperty]
         public Minuta.App.Dominio.Visitante Visitante{get;set;}
-        public EditModel1(IRepositorioVisitante repositorioVisitante)
+        public DeleteModel1(IRepositorioVisitante repositorioVisitante)
         {
             this.repositorioVisitante = repositorioVisitante;
         }
@@ -25,9 +25,9 @@ namespace Minuta.App.Frontend.Pages
             else
             return Page();
         }
-        public IActionResult OnPost()
+        public IActionResult OnPost(int visitanteId)
         {
-            Visitante = repositorioVisitante.UpdateVisitante(Visitante);            
+            repositorioVisitante.DeleteVisitante(visitanteId);            
             return Page();
         }
     }

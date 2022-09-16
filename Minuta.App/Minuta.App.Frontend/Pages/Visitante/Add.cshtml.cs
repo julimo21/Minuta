@@ -6,18 +6,19 @@ using Minuta.App.Persistencia.AppRepositorios;
 
 namespace Minuta.App.Frontend.Pages
 {
-    public class EditModel1 : PageModel
+    public class AddModel1 : PageModel
     {
         private readonly IRepositorioVisitante repositorioVisitante;
         [BindProperty]
         public Minuta.App.Dominio.Visitante Visitante{get;set;}
-        public EditModel1(IRepositorioVisitante repositorioVisitante)
+        public AddModel1(IRepositorioVisitante repositorioVisitante)
         {
             this.repositorioVisitante = repositorioVisitante;
         }
         public IActionResult OnGet(int visitanteId)
         {
-            Visitante = repositorioVisitante.GetVisitante(visitanteId);
+            Visitante = new App.Dominio.Visitante();
+
             if(Visitante == null)
             {
                 return RedirectToPage("./List");
@@ -27,7 +28,7 @@ namespace Minuta.App.Frontend.Pages
         }
         public IActionResult OnPost()
         {
-            Visitante = repositorioVisitante.UpdateVisitante(Visitante);            
+            Visitante = repositorioVisitante.AddVisitante(Visitante);            
             return Page();
         }
     }

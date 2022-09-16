@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj": {}
+    "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj": {
+    "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj",
+        "projectUniqueName": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj",
         "projectName": "Minuta.App.Dominio",
-        "projectPath": "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\njzm0\\.nuget\\packages\\",
-        "outputPath": "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Dominio\\obj\\",
+        "projectPath": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Dominio\\Minuta.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Juliana Mora\\.nuget\\packages\\",
+        "outputPath": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\njzm0\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Juliana Mora\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
