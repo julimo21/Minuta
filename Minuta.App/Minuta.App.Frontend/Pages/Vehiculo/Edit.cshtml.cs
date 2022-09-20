@@ -27,6 +27,10 @@ namespace Minuta.App.Frontend.Pages
         }
         public IActionResult OnPost()
         {
+            if(!ModelState.IsValid)
+            {
+                return Page();
+            }
             Vehiculo = repositorioVehiculo.UpdateVehiculo(Vehiculo);            
             return Page();
         }

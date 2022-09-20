@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+
 namespace Minuta.App.Dominio
 {
      /// <summary>Class <c>Persona</c>
@@ -7,7 +12,9 @@ namespace Minuta.App.Dominio
     {
         // Identificador único de cada vehiculo
         public int id { get; set; }
+        [Required]
         public string placa { get; set; }
+        [Required]
         public TipoVehiculo tipoVehiculo { set; get; }
 
     }

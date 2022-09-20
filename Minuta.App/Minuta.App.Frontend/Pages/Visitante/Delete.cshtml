@@ -2,3 +2,10 @@
 @model Minuta.App.Frontend.Pages.DeleteModel1
 @{
 }
+<h1>Eliminar Visitante: @Model.Visitante.cedula</h1>
+<form method="post">
+    <input type="hidden" asp-for = "Visitante.id"/>
+    <p>¿Estás seguro de eliminar el Visitante?</p><br>
+    @* <input asp-for="Visitante.id" class="form-control"> *@
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>

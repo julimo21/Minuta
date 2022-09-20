@@ -27,6 +27,7 @@ namespace Minuta.App.Frontend.Pages
         }
         public IActionResult OnPost(int vehiculoId)
         {
+            //Vehiculo = repositorioVehiculo.GetVehiculo(vehiculoId);
             repositorioVehiculo.DeleteVehiculo(vehiculoId);            
             return Page();
         }
