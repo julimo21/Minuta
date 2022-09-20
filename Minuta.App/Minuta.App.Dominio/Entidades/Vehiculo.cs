@@ -12,9 +12,9 @@ namespace Minuta.App.Dominio
     {
         // Identificador único de cada vehiculo
         public int id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe ingresar la placa del vehículo")]
         public string placa { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Debe ingresar el tipo de vehículo")]
         public TipoVehiculo tipoVehiculo { set; get; }
 
     }
