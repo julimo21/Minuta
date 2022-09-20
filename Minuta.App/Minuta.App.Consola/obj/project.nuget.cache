@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XAveZuO4SWLgqjzY37TbbzVOegvd2nqP8BHS6k4jxCjA+Y+DKhfVZq9rf6MdRgMTrsucPOwVYaxF1HaCOADXeQ==",
+  "dgSpecHash": "lz6ZWME7PtxceM7lawYvtAPtwpnG3Vu1wUhMSGq2GYsEF0/PoY65JOgvZG8StGv1T8yr981aP1XrqV3zISkssQ==",
   "success": true,
   "projectFilePath": "C:\\MinutaJejanSystem\\Minuta.App\\Minuta.App.Consola\\Minuta.App.Consola.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,7 @@
     "C:\\Users\\njzm0\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\njzm0\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\njzm0\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\njzm0\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\njzm0\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\njzm0\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\njzm0\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",

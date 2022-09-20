@@ -122,3 +122,6 @@ C:\GitHub\Minuta\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Minuta.App.Pers
 C:\GitHub\Minuta\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Minuta.App.Persistencia.pdb
 C:\GitHub\Minuta\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Minuta.App.Dominio.pdb
 C:\GitHub\Minuta\Minuta.App\Minuta.App.Frontend\obj\Debug\net6.0\Minuta.App.Frontend.csproj.CopyComplete
+C:\MinutaJejanSystem\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Humanizer.dll
+C:\MinutaJejanSystem\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\MinutaJejanSystem\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll

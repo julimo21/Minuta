@@ -1,0 +1,45 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.ListModel2
+@{
+}
+<h1>Minuta Visitantes</h1><br>
+<a asp-page="./Add" class="btn btn-primary">Agregar Registro</a><br><br>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>FECHA INGRESO</th>
+        <th>HORA INGRESO</th>
+        <th>ASUNTO</th>
+        <th>VISITANTE</th>
+        <th>FECHA SALIDA</th>
+        <th>HORA SALIDA</th>
+    </tr>
+    @foreach (var minutaVisitante in Model.MinutaVisitantes)
+    {
+        <tr>
+            <td>@minutaVisitante.id</td>
+            <td>@minutaVisitante.fecha</td>
+            <td>@minutaVisitante.hora</td>
+            <td>@minutaVisitante.asunto</td>
+            <td>@minutaVisitante.visitante</td>
+            <td>@minutaVisitante.fechaSalidaVis</td>
+            <td>@minutaVisitante.horaSalidaVis</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-minutaVisitanteId="@minutaVisitante.id">
+                <i class="fas fa-info-circle"></i>
+                Detalle MinutaVisitante
+                </a>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-minutaVisitanteId="@minutaVisitante.id">
+                <i class="fas fa-info-circle"></i>
+                Editar
+                </a>
+                <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-minutaVisitanteId="@minutaVisitante.id">
+                <i class="fas fa-info-circle"></i>
+                Eliminar
+                </a>
+            </td>
+            
+        </tr>
+    }
+</table>
