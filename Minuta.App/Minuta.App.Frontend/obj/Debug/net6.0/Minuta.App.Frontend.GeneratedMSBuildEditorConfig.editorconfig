@@ -23,7 +23,15 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Privacy.cshtml]
+=======
+[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/MinutaVisitante/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWludXRhVmlzaXRhbnRlXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Privacy.cshtml]
+>>>>>>> 78f434fcca485172c66abd3cb4ec42dd9b51af01
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 

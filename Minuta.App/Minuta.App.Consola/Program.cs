@@ -6,7 +6,17 @@ namespace Minuta.App.Consola
 {
     internal class Program
     {
-        private static IRepositorioVisitante _repoVisitante = new RepositorioVisitante(new Minuta.App.Persistencia.AppContext());
+        private static void Main(string[] args)
+        {
+            Console.WriteLine("Hola para todos");
+            //AddVisitante();
+            //BuscarVisitante(5);
+            //EliminarVisitante(6);
+            //UpdateVisitante(7);
+
+        }
+        
+        /*private static IRepositorioVisitante _repoVisitante = new RepositorioVisitante(new Minuta.App.Persistencia.AppContext());
         private static void Main(string[] args)
         {
             Console.WriteLine("Hola para todos");
@@ -88,7 +98,7 @@ namespace Minuta.App.Consola
                 cedula = ced
             };
 
-            _repoPersona.AddPersona(persona);*/
-        }
+            _repoPersona.AddPersona(persona);
+        }*/
     }
 }
