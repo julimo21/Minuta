@@ -9,7 +9,7 @@ namespace Minuta.App.Persistencia.AppRepositorios
 
         MinutaVisitante AddMinutaVisitante(MinutaVisitante minutaVisitante);
         MinutaVisitante GetMinutaVisitante(int idMinutaVisitante);
-        MinutaVisitante UpdateMinutaVisitante(MinutaVisitante minutaVisitante);
+        MinutaVisitante UpdateMinutaVisitante(MinutaVisitante minutaVisitante, string cedulaVisitante);
         void DeleteMinutaVisitante(int idMinutaVisitante);
     }
 }

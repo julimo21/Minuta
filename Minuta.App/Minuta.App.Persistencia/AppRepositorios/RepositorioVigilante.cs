@@ -39,9 +39,9 @@ namespace Minuta.App.Persistencia
                 VigilanteEncontrar.apellidos = vigilante.apellidos;
                 VigilanteEncontrar.cedula = vigilante.cedula;
                 //campos que vienen de usuario
-                VigilanteEncontrar.idUsuario = vigilante.idUsuario;
+                /*VigilanteEncontrar.idUsuario = vigilante.idUsuario;
                 VigilanteEncontrar.contrasena = vigilante.contrasena;
-                VigilanteEncontrar.tipo = vigilante.tipo;
+                VigilanteEncontrar.tipo = vigilante.tipo;*/
                 //campos que vienen de vigilante
                 VigilanteEncontrar.empresa = vigilante.empresa;
                 VigilanteEncontrar.turno = vigilante.turno;

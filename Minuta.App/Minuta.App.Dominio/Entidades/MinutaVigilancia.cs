@@ -6,8 +6,8 @@ namespace Minuta.App.Dominio
     public class MinutaVigilancia
     {
         public int id { get; set; }
-        public DateTime fecha { get; set; }
-        public DateTime hora { get; set; }
+        public string fecha { get; set; }
+        public string hora { get; set; }
         public string asunto { get; set; }       
     }
 }

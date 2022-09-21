@@ -6,7 +6,7 @@ namespace Minuta.App.Dominio
     {
         public Visitante visitante { get; set; }
         //public Persona visitante { get; set; }
-        public DateTime fechaSalidaVis { get; set; }
-        public DateTime horaSalidaVis { get; set; }
+        public string fechaSalidaVis { get; set; }
+        public string horaSalidaVis { get; set; }
     }
 }

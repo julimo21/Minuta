@@ -1,8 +1,11 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
 namespace Minuta.App.Dominio
 {
      
-    public class Administrador : Usuario
+    public class Administrador : Persona
     {
         public string celularAdm { get; set; }
         public string correoAdm { get; set; }

@@ -39,9 +39,9 @@ namespace Minuta.App.Persistencia
                 AdministradorEncontrar.apellidos = administrador.apellidos;
                 AdministradorEncontrar.cedula = administrador.cedula;
                 //campos que vienen de usuario
-                AdministradorEncontrar.idUsuario = administrador.idUsuario;
+                /*AdministradorEncontrar.idUsuario = administrador.idUsuario;
                 AdministradorEncontrar.contrasena = administrador.contrasena;
-                AdministradorEncontrar.tipo = administrador.tipo;
+                AdministradorEncontrar.tipo = administrador.tipo;*/
                 //campos que vienen de administrador
                 AdministradorEncontrar.celularAdm = administrador.celularAdm;
                 AdministradorEncontrar.correoAdm = administrador.correoAdm;

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Minuta.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace Minuta.App.Persistencia.AppRepositorios
 {
@@ -15,7 +16,7 @@ namespace Minuta.App.Persistencia.AppRepositorios
         private AppContext appcox = new AppContext();
         IEnumerable<MinutaVisitante> IRepositorioMinutaVisitante.GetAllMinutaVisitante()
         {
-            return appcox.minVis;
+            return appcox.minVis.Include(v => v.visitante);
         }
         MinutaVisitante IRepositorioMinutaVisitante.AddMinutaVisitante(Minuta.App.Dominio.MinutaVisitante minutaVisitante)
         {
@@ -28,18 +29,19 @@ namespace Minuta.App.Persistencia.AppRepositorios
         {
             return appcox.minVis.FirstOrDefault(mv => mv.id == idMinutaVisitante);
         }
-        MinutaVisitante IRepositorioMinutaVisitante.UpdateMinutaVisitante(Minuta.App.Dominio.MinutaVisitante minutaVisitante)
+        MinutaVisitante IRepositorioMinutaVisitante.UpdateMinutaVisitante(Minuta.App.Dominio.MinutaVisitante minutaVisitante, string cedulaVisitante)
         {
-            var MinutaVisitanteEncontrar = appcox.minVis.FirstOrDefault(mv => mv.id == minutaVisitante.id);
+            var MinutaVisitanteEncontrar = appcox.minVis.Include(v => v.visitante).FirstOrDefault(mv => mv.id == minutaVisitante.id);
 
             if(MinutaVisitanteEncontrar != null)
             {                
+                var nuevoVisitante = appcox.vis.FirstOrDefault(v => v.cedula == cedulaVisitante);
                 //campos que vienen de minuta vigilancia
                 MinutaVisitanteEncontrar.fecha = minutaVisitante.fecha;
                 MinutaVisitanteEncontrar.hora = minutaVisitante.hora;
                 MinutaVisitanteEncontrar.asunto = minutaVisitante.asunto;                
                 //campos que vienen de minuta visitante
-                MinutaVisitanteEncontrar.visitante = minutaVisitante.visitante;
+                MinutaVisitanteEncontrar.visitante = nuevoVisitante;
                 MinutaVisitanteEncontrar.fechaSalidaVis = minutaVisitante.fechaSalidaVis;
                 MinutaVisitanteEncontrar.horaSalidaVis = minutaVisitante.horaSalidaVis;
 

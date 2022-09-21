@@ -39,9 +39,9 @@ namespace Minuta.App.Persistencia
                 ResidenteEncontrar.apellidos = residente.apellidos;
                 ResidenteEncontrar.cedula = residente.cedula;
                 //campos que vienen de usuario
-                ResidenteEncontrar.idUsuario = residente.idUsuario;
+                /*ResidenteEncontrar.idUsuario = residente.idUsuario;
                 ResidenteEncontrar.contrasena = residente.contrasena;
-                ResidenteEncontrar.tipo = residente.tipo;
+                ResidenteEncontrar.tipo = residente.tipo;*/
                 //campos que vienen de residente
                 ResidenteEncontrar.numApartamentoRes = residente.numApartamentoRes;
                 ResidenteEncontrar.numParqueaderoRes = residente.numParqueaderoRes;

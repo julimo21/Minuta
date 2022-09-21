@@ -5,8 +5,8 @@ namespace Minuta.App.Persistencia
     public class AppContext : DbContext
     {
         public DbSet<Persona> per {get;set;}
-        public DbSet<Usuario> usu {get;set;}
-        public DbSet<RolUsuario> tipUsu {get;set;}
+        //public DbSet<Usuario> usu {get;set;}
+        //public DbSet<RolUsuario> tipUsu {get;set;}
         public DbSet<Administrador> adm {get;set;}
         public DbSet<Vigilante> vig {get;set;}
         public DbSet<Residente> res {get;set;}        
