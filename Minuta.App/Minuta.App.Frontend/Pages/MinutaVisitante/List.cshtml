@@ -5,7 +5,7 @@
 <h1>Minuta Visitantes</h1><br>
 <a asp-page="./Add" class="btn btn-primary">Agregar Registro</a><br><br>
 <table class="table">
-    <tr>
+    <tr align="center">
         <th>ID</th>
         <th>FECHA INGRESO</th>
         <th>HORA INGRESO</th>
@@ -16,7 +16,7 @@
     </tr>
     @foreach (var minutaVisitante in Model.MinutaVisitantes)
     {
-        <tr>
+        <tr align="center">
             <td>@minutaVisitante.id</td>
             <td>@minutaVisitante.fecha</td>
             <td>@minutaVisitante.hora</td>

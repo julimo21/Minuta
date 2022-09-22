@@ -5,14 +5,14 @@
 <h1>Listado de Vehículos</h1><br>
 <a asp-page="./Add" class="btn btn-primary">Agregar Vehículo</a><br><br>
 <table class="table">
-    <tr>
+    <tr align="center">
         <th>ID</th>
         <th>PLACA</th>
         <th>TIPO</th>
     </tr>
     @foreach (var vehiculo in Model.Vehiculos)
     {
-        <tr>
+        <tr align="center">
             <td>@vehiculo.id</td>
             <td>@vehiculo.placa</td>
             <td>@vehiculo.tipoVehiculo</td>

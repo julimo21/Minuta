@@ -5,7 +5,7 @@
 <h1>Listado de Vigilantes</h1>
 <a asp-page="./Add" class="btn btn-primary">Agregar Vigilante</a><br><br>
 <table class="table">
-    <tr>
+    <tr align="center">
         <th>ID</th>
         <th>NOMBRE</th>
         <th>APELLIDOS</th>
@@ -15,7 +15,7 @@
     </tr>
     @foreach (var vigilante in Model.Vigilantes)
     {
-        <tr>
+        <tr align="center">
             <td>@vigilante.id</td>
             <td>@vigilante.nombre</td>
             <td>@vigilante.apellidos</td>
