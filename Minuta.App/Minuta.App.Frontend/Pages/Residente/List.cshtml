@@ -1,0 +1,45 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.ListModel4
+@{
+}
+<h1>Listado de Residentes</h1>
+<a asp-page="./Add" class="btn btn-primary">Agregar Residente</a><br><br>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>NOMBRE</th>
+        <th>APELLIDOS</th>
+        <th>CÉDULA</th>
+        <th>NÚMERO DE APARTAMENTO</th>
+        <th>NÚMERO DE PARQUEADERO</th>
+        <th>NÚMERO DE CELULAR</th>
+    </tr>
+    @foreach (var residente in Model.Residentes)
+    {
+        <tr>
+            <td>@residente.id</td>
+            <td>@residente.nombre</td>
+            <td>@residente.apellidos</td>
+            <td>@residente.cedula</td>
+            <td>@residente.numApartamentoRes</td>
+            <td>@residente.numParqueaderoRes</td>
+            <td>@residente.celularRes</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-residenteId="@residente.id">
+                <i class="fas fa-info-circle"></i>
+                Detalle Residente
+                </a>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-residenteId="@residente.id">
+                <i class="fas fa-info-circle"></i>
+                Editar
+                </a>
+                <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-residenteId="@residente.id">
+                <i class="fas fa-info-circle"></i>
+                Eliminar
+                </a>
+            </td>
+            
+        </tr>
+    }
+</table>

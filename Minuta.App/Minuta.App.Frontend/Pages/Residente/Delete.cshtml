@@ -1,0 +1,11 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.DeleteModel4
+@{
+}
+<h1>Eliminar Residente: @Model.Residente.cedula</h1>
+<form method="post">
+    <input type="hidden" asp-for = "Residente.id"/>
+    <p>¿Estás seguro de eliminar el Residente?</p><br>
+    @* <input asp-for="Residente.id" class="form-control"> *@
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>

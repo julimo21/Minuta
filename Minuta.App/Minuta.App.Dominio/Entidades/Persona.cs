@@ -9,11 +9,11 @@ namespace Minuta.App.Dominio
     {
         // Identificador único de cada persona
         public int id { get; set; }
-        //[Required(ErrorMessage = "Debe ingresar el nombre")]
+        [Required(ErrorMessage = "Debe ingresar el nombre")]
         public string nombre { get; set; }
-        //[Required(ErrorMessage = "Debe ingresar los apellidos")]
+        [Required(ErrorMessage = "Debe ingresar los apellidos")]
         public string apellidos { get; set; }
-        //[Required(ErrorMessage = "Debe ingresar la cédula")]
+        [Required(ErrorMessage = "Debe ingresar la cédula")]
         public string cedula { get; set; }
         //public TipoUsuario tipoUsuario { set; get; }
         //public string numApartamento { get; set; }

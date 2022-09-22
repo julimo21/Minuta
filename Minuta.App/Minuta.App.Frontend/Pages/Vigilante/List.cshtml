@@ -1,0 +1,43 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.ListModel3
+@{
+}
+<h1>Listado de Vigilantes</h1>
+<a asp-page="./Add" class="btn btn-primary">Agregar Vigilante</a><br><br>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>NOMBRE</th>
+        <th>APELLIDOS</th>
+        <th>CÉDULA</th>
+        <th>EMPRESA</th>
+        <th>TURNO</th>
+    </tr>
+    @foreach (var vigilante in Model.Vigilantes)
+    {
+        <tr>
+            <td>@vigilante.id</td>
+            <td>@vigilante.nombre</td>
+            <td>@vigilante.apellidos</td>
+            <td>@vigilante.cedula</td>
+            <td>@vigilante.empresa</td>
+            <td>@vigilante.turno</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-vigilanteId="@vigilante.id">
+                <i class="fas fa-info-circle"></i>
+                Detalle Vigilante
+                </a>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-vigilanteId="@vigilante.id">
+                <i class="fas fa-info-circle"></i>
+                Editar
+                </a>
+                <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-vigilanteId="@vigilante.id">
+                <i class="fas fa-info-circle"></i>
+                Eliminar
+                </a>
+            </td>
+            
+        </tr>
+    }
+</table>

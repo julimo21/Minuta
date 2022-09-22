@@ -28,6 +28,10 @@ namespace Minuta.App.Frontend.Pages
         }
         public IActionResult OnPost()
         {
+            if(!ModelState.IsValid)
+            {
+                return Page();
+            }
             Visitante = repositorioVisitante.AddVisitante(Visitante);            
             return Page();
         }

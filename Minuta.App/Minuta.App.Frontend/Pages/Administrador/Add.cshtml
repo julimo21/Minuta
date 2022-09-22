@@ -1,0 +1,35 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.AddModel5
+@{
+}
+<h1>Agregar Nuevo Administrador: @Model.Administrador.cedula</h1>
+<form method="post">
+    <input type="hidden" asp-for = "Administrador.id"/>
+    <div class="form-group">
+        <label asp-for="Administrador.nombre">NOMBRE</label>
+        <input asp-for="Administrador.nombre" class="form-control" width="20px">
+        <span class="text-danger" asp-validation-for="Administrador.nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Administrador.apellidos">APELLIDOS</label>
+        <input asp-for="Administrador.apellidos" class="form-control">
+        <span class="text-danger" asp-validation-for="Administrador.apellidos"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Administrador.cedula">CÉDULA</label>
+        <input asp-for="Administrador.cedula" class="form-control">
+        <span class="text-danger" asp-validation-for="Administrador.cedula"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Administrador.celularAdm">NÚMERO DE CELULAR</label>
+        <input asp-for="Administrador.celularAdm" class="form-control">
+        <span class="text-danger" asp-validation-for="Administrador.celularAdm"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Administrador.correoAdm">CORREO</label>
+        <input asp-for="Administrador.correoAdm" class="form-control">
+        <span class="text-danger" asp-validation-for="Administrador.correoAdm"></span>
+    </div><br>
+    <button type="submit" class="btn btn-primary">Grabar</button>
+</form><br>
+<a asp-page="./List" class="btn-default"> Lista de Administradores</a>

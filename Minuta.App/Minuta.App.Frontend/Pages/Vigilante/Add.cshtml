@@ -1,0 +1,30 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.AddModel3
+@{
+}
+<h1>Agregar Nuevo Vigilante: @Model.Vigilante.cedula</h1>
+<form method="post">
+    <input type="hidden" asp-for = "Vigilante.id"/>
+    <div class="form-group">
+        <label asp-for="Vigilante.nombre">NOMBRE</label>
+        <input asp-for="Vigilante.nombre" class="form-control" width="20px">
+        <span class="text-danger" asp-validation-for="Vigilante.nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Vigilante.apellidos">APELLIDOS</label>
+        <input asp-for="Vigilante.apellidos" class="form-control">
+        <span class="text-danger" asp-validation-for="Vigilante.apellidos"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Vigilante.cedula">CÉDULA</label>
+        <input asp-for="Vigilante.cedula" class="form-control">
+        <span class="text-danger" asp-validation-for="Vigilante.cedula"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Vigilante.turno">TURNO</label>
+        <input asp-for="Vigilante.turno" class="form-control">
+        <span class="text-danger" asp-validation-for="Vigilante.turno"></span>
+    </div><br>
+    <button type="submit" class="btn btn-primary">Grabar</button>
+</form><br>
+<a asp-page="./List" class="btn-default"> Lista de Vigilantes</a>

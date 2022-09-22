@@ -1,0 +1,43 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.ListModel5
+@{
+}
+<h1>Listado de Administradores</h1>
+<a asp-page="./Add" class="btn btn-primary">Agregar Administrador</a><br><br>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>NOMBRE</th>
+        <th>APELLIDOS</th>
+        <th>CÉDULA</th>
+        <th>NÚMERO DE CELULAR</th>
+        <th>CORREO</th>
+    </tr>
+    @foreach (var administrador in Model.Administradores)
+    {
+        <tr>
+            <td>@administrador.id</td>
+            <td>@administrador.nombre</td>
+            <td>@administrador.apellidos</td>
+            <td>@administrador.cedula</td>
+            <td>@administrador.celularAdm</td>
+            <td>@administrador.correoAdm</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-administradorId="@administrador.id">
+                <i class="fas fa-info-circle"></i>
+                Detalle Administrador
+                </a>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-administradorId="@administrador.id">
+                <i class="fas fa-info-circle"></i>
+                Editar
+                </a>
+                <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-administradorId="@administrador.id">
+                <i class="fas fa-info-circle"></i>
+                Eliminar
+                </a>
+            </td>
+            
+        </tr>
+    }
+</table>

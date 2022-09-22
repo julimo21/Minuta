@@ -1,0 +1,11 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.DeleteModel3
+@{
+}
+<h1>Eliminar Vigilante: @Model.Vigilante.cedula</h1>
+<form method="post">
+    <input type="hidden" asp-for = "Vigilante.id"/>
+    <p>¿Estás seguro de eliminar el Vigilante?</p><br>
+    @* <input asp-for="Vigilante.id" class="form-control"> *@
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>

@@ -1,0 +1,11 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.DeleteModel5
+@{
+}
+<h1>Eliminar Administrador: @Model.Administrador.cedula</h1>
+<form method="post">
+    <input type="hidden" asp-for = "Administrador.id"/>
+    <p>¿Estás seguro de eliminar el Administrador?</p><br>
+    @* <input asp-for="Administrador.id" class="form-control"> *@
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>

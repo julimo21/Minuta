@@ -1,0 +1,34 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.EditModel4
+@{
+}
+<h1>Edición del Residente: @Model.Residente.cedula</h1>
+<form method="post">
+    <input type="hidden" asp-for = "Residente.id"/>
+    <div class="form-group">
+        <label asp-for="Residente.nombre">NOMBRE</label>
+        <input asp-for="Residente.nombre" class="form-control" width="20px">
+    </div>
+    <div class="form-group">
+        <label asp-for="Residente.apellidos">APELLIDOS</label>
+        <input asp-for="Residente.apellidos" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Residente.cedula">CÉDULA</label>
+        <input asp-for="Residente.cedula" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Residente.numApartamentoRes">NÚMERO DE APARTAMENTO</label>
+        <input asp-for="Residente.numApartamentoRes" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Residente.numParqueaderoRes">NÚMERO DE PARQUEADERO</label>
+        <input asp-for="Residente.numParqueaderoRes" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Residente.celularRes">NÚMERO DE CELULAR</label>
+        <input asp-for="Residente.celularRes" class="form-control">
+    </div><br>
+    <button type="submit" class="btn btn-primary">Grabar</button>
+</form><br>
+<a asp-page="./List" class="btn-default"> Lista de Residentes</a>

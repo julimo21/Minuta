@@ -125,3 +125,6 @@ C:\GitHub\Minuta\Minuta.App\Minuta.App.Frontend\obj\Debug\net6.0\Minuta.App.Fron
 C:\MinutaJejanSystem\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Humanizer.dll
 C:\MinutaJejanSystem\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\MinutaJejanSystem\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Humanizer.dll
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\GitHub\Minuta\Minuta.App\Minuta.App.Frontend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
