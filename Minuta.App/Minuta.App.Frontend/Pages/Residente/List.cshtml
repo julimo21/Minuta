@@ -26,18 +26,24 @@
             <td>@residente.celularRes</td>
             
             <td>
+                <div>
                 <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-residenteId="@residente.id">
                 <i class="fas fa-info-circle"></i>
                 Detalle Residente
                 </a>
+                </div>
+                <div>
                 <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-residenteId="@residente.id">
                 <i class="fas fa-info-circle"></i>
                 Editar
                 </a>
+                </div>
+                <div>
                 <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-residenteId="@residente.id">
                 <i class="fas fa-info-circle"></i>
                 Eliminar
                 </a>
+                </div>
             </td>
             
         </tr>
