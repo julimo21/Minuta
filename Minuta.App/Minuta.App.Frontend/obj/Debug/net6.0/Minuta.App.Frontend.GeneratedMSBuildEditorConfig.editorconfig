@@ -8,157 +8,157 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Minuta.App.Frontend
 build_property.RootNamespace = Minuta.App.Frontend
-build_property.ProjectDir = C:\MinutaJejanSystem\Minuta.App\Minuta.App.Frontend\
+build_property.ProjectDir = C:\GitHub\Minuta\Minuta.App\Minuta.App.Frontend\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\MinutaJejanSystem\Minuta.App\Minuta.App.Frontend
+build_property.MSBuildProjectDirectory = C:\GitHub\Minuta\Minuta.App\Minuta.App.Frontend
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Administrador/Add.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Administrador/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWRvclxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Administrador/Delete.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Administrador/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWRvclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Administrador/Details.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Administrador/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWRvclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Administrador/Edit.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Administrador/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWRvclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Administrador/List.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Administrador/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWRvclxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Error.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Index.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/MinutaVisitante/Add.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/MinutaVisitante/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWludXRhVmlzaXRhbnRlXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/MinutaVisitante/Delete.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/MinutaVisitante/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWludXRhVmlzaXRhbnRlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/MinutaVisitante/Details.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/MinutaVisitante/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWludXRhVmlzaXRhbnRlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/MinutaVisitante/Edit.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/MinutaVisitante/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWludXRhVmlzaXRhbnRlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/MinutaVisitante/List.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/MinutaVisitante/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWludXRhVmlzaXRhbnRlXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Privacy.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Residente/Add.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Residente/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzaWRlbnRlXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Residente/Delete.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Residente/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzaWRlbnRlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Residente/Details.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Residente/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzaWRlbnRlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Residente/Edit.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Residente/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzaWRlbnRlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Residente/List.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Residente/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzaWRlbnRlXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Vehiculo/Add.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Vehiculo/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9cQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Vehiculo/Delete.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Vehiculo/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Vehiculo/Details.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Vehiculo/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Vehiculo/Edit.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Vehiculo/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Vehiculo/List.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Vehiculo/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9cTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Vigilante/Add.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Vigilante/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlnaWxhbnRlXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Vigilante/Delete.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Vigilante/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlnaWxhbnRlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Vigilante/Details.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Vigilante/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlnaWxhbnRlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Vigilante/Edit.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Vigilante/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlnaWxhbnRlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Vigilante/List.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Vigilante/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlnaWxhbnRlXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Visitante/Add.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Visitante/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlzaXRhbnRlXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Visitante/Delete.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Visitante/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlzaXRhbnRlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Visitante/Details.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Visitante/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlzaXRhbnRlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Visitante/Edit.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Visitante/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlzaXRhbnRlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Visitante/List.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Visitante/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlzaXRhbnRlXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/_ViewImports.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/_ViewStart.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/MinutaJejanSystem/Minuta.App/Minuta.App.Frontend/Pages/Shared/_Layout.cshtml]
+[C:/GitHub/Minuta/Minuta.App/Minuta.App.Frontend/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4phwu4rhev
