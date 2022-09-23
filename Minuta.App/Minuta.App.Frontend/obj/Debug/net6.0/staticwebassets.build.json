@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E15OJSLZT6sSzSDTG8J08ftv5DeySPyHyNQnD1qTGZ0=",
+  "Hash": "9Yu2FlZNmB4ofTC+NY17pwCVeNa7f6XBYs5dmuv7LlQ=",
   "Source": "Minuta.App.Frontend",
   "BasePath": "_content/Minuta.App.Frontend",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Frontend\\wwwroot\\img\\JejanSystem.JPG",
+      "SourceId": "Minuta.App.Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Frontend\\wwwroot\\",
+      "BasePath": "_content/Minuta.App.Frontend",
+      "RelativePath": "img/JejanSystem.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\JejanSystem.JPG"
     },
     {
       "Identity": "C:\\GitHub\\Minuta\\Minuta.App\\Minuta.App.Frontend\\wwwroot\\js\\site.js",
