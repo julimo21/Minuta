@@ -18,8 +18,10 @@ namespace Minuta.App.Persistencia.AppRepositorios
         {
             return appcox.minVis.Include(v => v.visitante);
         }
-        MinutaVisitante IRepositorioMinutaVisitante.AddMinutaVisitante(Minuta.App.Dominio.MinutaVisitante minutaVisitante)
+        MinutaVisitante IRepositorioMinutaVisitante.AddMinutaVisitante(Minuta.App.Dominio.MinutaVisitante minutaVisitante, string cedulaVisitante)
         {
+            var nuevoVisitante = appcox.vis.FirstOrDefault(v => v.cedula == cedulaVisitante);
+            minutaVisitante.visitante = nuevoVisitante;
             var AgregarMinutaVisitante = appcox.minVis.Add(minutaVisitante);
             appcox.SaveChanges();
 
@@ -27,7 +29,7 @@ namespace Minuta.App.Persistencia.AppRepositorios
         }
         MinutaVisitante IRepositorioMinutaVisitante.GetMinutaVisitante(int idMinutaVisitante)
         {
-            return appcox.minVis.FirstOrDefault(mv => mv.id == idMinutaVisitante);
+            return appcox.minVis.Include(mv => mv.visitante).FirstOrDefault(mv => mv.id == idMinutaVisitante);
         }
         MinutaVisitante IRepositorioMinutaVisitante.UpdateMinutaVisitante(Minuta.App.Dominio.MinutaVisitante minutaVisitante, string cedulaVisitante)
         {

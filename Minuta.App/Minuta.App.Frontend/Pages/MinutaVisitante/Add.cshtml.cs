@@ -10,20 +10,25 @@ namespace Minuta.App.Frontend.Pages
     public class AddModel2 : PageModel
     {
        private readonly IRepositorioMinutaVisitante repositorioMinutaVisitante;
+       private readonly IRepositorioVisitante repositorioVisitante;
         [BindProperty]
         public Minuta.App.Dominio.MinutaVisitante MinutaVisitante{get;set;}
         [BindProperty]
         public string cedulaVisitante {get;set;}
+        public int idVisitante {get;set;}
         public string fecha;
         public string hora;
+        public IEnumerable<Minuta.App.Dominio.Visitante> Visitantes;
         public AddModel2(IRepositorioMinutaVisitante repositorioMinutaVisitante)
         {
             this.repositorioMinutaVisitante = repositorioMinutaVisitante;
+            this.repositorioVisitante = new RepositorioVisitante();
         }
         public IActionResult OnGet(int minutaVisitanteId)
         {
             fecha = DateTime.Now.ToString("yyyy-MM-dd");
             hora = DateTime.Now.ToString("hh:mm:ss tt");
+            Visitantes = repositorioVisitante.GetAllVisitante();
             MinutaVisitante = new App.Dominio.MinutaVisitante();
             if(MinutaVisitante == null)
             {
@@ -36,7 +41,8 @@ namespace Minuta.App.Frontend.Pages
         {
             fecha = DateTime.Now.ToString("yyyy-MM-dd");
             hora = DateTime.Now.ToString("hh:mm:ss tt");
-            MinutaVisitante = repositorioMinutaVisitante.AddMinutaVisitante(MinutaVisitante);            
+            Visitantes = repositorioVisitante.GetAllVisitante();
+            MinutaVisitante = repositorioMinutaVisitante.AddMinutaVisitante(MinutaVisitante, cedulaVisitante);            
             return Page();
         }
     }

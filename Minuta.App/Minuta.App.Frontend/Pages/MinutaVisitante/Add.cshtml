@@ -18,8 +18,16 @@
         <input asp-for="MinutaVisitante.asunto" class="form-control">
     </div>
     <div class="form-group">
-        <label asp-for="MinutaVisitante.visitante.cedula">VISITANTE</label>
-        <input asp-for="MinutaVisitante.visitante.cedula" class="form-control">
+        <!--<label asp-for="MinutaVisitante.visitante.cedula">VISITANTE</label>-->
+        <label for="">VISITANTE</label><br>
+        <!--<p>VISITANTE</p>-->
+        <select asp-for="cedulaVisitante">
+            @foreach (var visitante in @Model.Visitantes)
+            {
+                <option>@visitante.cedula</option>
+            }
+        </select>
+        <!--<input asp-for="MinutaVisitante.visitante.cedula" class="form-control">-->
     </div>
     <div class="form-group">
         <label asp-for="MinutaVisitante.fechaSalidaVis">FECHA DE SALIDA</label>

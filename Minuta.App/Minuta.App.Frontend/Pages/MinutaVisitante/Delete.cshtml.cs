@@ -29,7 +29,7 @@ namespace Minuta.App.Frontend.Pages
         {
             //MinutaVisitante = repositorioMinutaVisitante.GetMinutaVisitante(minutaVisitanteId);
             repositorioMinutaVisitante.DeleteMinutaVisitante(minutaVisitanteId);            
-            return Page();
+            return RedirectToPage("./List");
         }
     }
 }

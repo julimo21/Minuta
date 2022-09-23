@@ -17,14 +17,21 @@
         <label asp-for="MinutaVisitante.asunto">ASUNTO</label>
         <input asp-for="MinutaVisitante.asunto" class="form-control">
     </div>
-    <div class="form-group">
-        <label asp-for="MinutaVisitante.visitante.cedula">VISITANTE</label>
-        <input asp-for="MinutaVisitante.visitante.cedula" class="form-control">
-    </div>
-    <div class="form-group">
-        <label asp-for="cedulaVisitante">CAMBIAR VISITANTE</label>
-        <input asp-for="cedulaVisitante" class="form-control" value="@Model.MinutaVisitante.visitante.cedula">
-    </div>
+    <label for="">VISITANTE</label><br>
+    <!--<p>VISITANTE</p>-->
+        <select asp-for="cedulaVisitante">
+            @foreach (var visitante in @Model.Visitantes)
+            {
+                @if(visitante.cedula == Model.MinutaVisitante.visitante.cedula)
+                {
+                    <option selected="selected">@visitante.cedula</option>
+                }
+                else
+                {
+                    <option>@visitante.cedula</option>
+                }
+            }
+        </select>
     <div class="form-group">
         <label asp-for="MinutaVisitante.fechaSalidaVis">FECHA DE SALIDA</label>
         <input asp-for="MinutaVisitante.fechaSalidaVis" class="form-control">
