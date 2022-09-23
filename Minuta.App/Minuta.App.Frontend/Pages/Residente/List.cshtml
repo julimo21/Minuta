@@ -4,7 +4,7 @@
 }
 <h1>Listado de Residentes</h1>
 <a asp-page="./Add" class="btn btn-primary">Agregar Residente</a><br><br>
-<table class="table">
+<table class="table" style="width:100%">
     <tr align="center">
         <th>ID</th>
         <th>NOMBRE</th>
@@ -24,28 +24,26 @@
             <td>@residente.numApartamentoRes</td>
             <td>@residente.numParqueaderoRes</td>
             <td>@residente.celularRes</td>
-            
+
             <td>
-                <div>
                 <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-residenteId="@residente.id">
-                <i class="fas fa-info-circle"></i>
-                Detalle Residente
+                    <i class="fas fa-info-circle"></i>
+                    Detalle Residente
                 </a>
-                </div>
-                <div>
-                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-residenteId="@residente.id">
-                <i class="fas fa-info-circle"></i>
-                Editar
-                </a>
-                </div>
-                <div>
-                <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-residenteId="@residente.id">
-                <i class="fas fa-info-circle"></i>
-                Eliminar
-                </a>
-                </div>
             </td>
-            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-residenteId="@residente.id">
+                    <i class="fas fa-info-circle"></i>
+                    Editar
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-residenteId="@residente.id">
+                    <i class="fas fa-info-circle"></i>
+                    Eliminar
+                </a>
+            </td>
+
         </tr>
     }
 </table>

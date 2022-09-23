@@ -22,8 +22,8 @@ namespace Minuta.App.Frontend.Pages
         }
         public IActionResult OnGet(int minutaVisitanteId)
         {
-            fecha = DateTime.Now.ToString("yyyy-MM-dd");
-            hora = DateTime.Now.ToString("hh:mm:ss tt");
+            //fecha = DateTime.Now.ToString("yyyy-MM-dd");
+            //hora = DateTime.Now.ToString("hh:mm:ss tt");
             MinutaVisitante = repositorioMinutaVisitante.GetMinutaVisitante(minutaVisitanteId);
             if(MinutaVisitante == null)
             {
@@ -34,8 +34,8 @@ namespace Minuta.App.Frontend.Pages
         }
         public IActionResult OnPost()
         {
-            fecha = DateTime.Now.ToString("yyyy-MM-dd");
-            hora = DateTime.Now.ToString("hh:mm:ss tt");
+            //fecha = DateTime.Now.ToString("yyyy-MM-dd");
+            //hora = DateTime.Now.ToString("hh:mm:ss tt");
             MinutaVisitante = repositorioMinutaVisitante.UpdateMinutaVisitante(MinutaVisitante, cedulaVisitante);            
             return Page();
         }
