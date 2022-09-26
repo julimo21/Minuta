@@ -43,7 +43,7 @@ namespace Minuta.App.Persistencia.AppRepositorios
                 MinutaCorrespondenciaEncontrar.hora = minutaCorrespondencia.hora;
                 MinutaCorrespondenciaEncontrar.asunto = minutaCorrespondencia.asunto;                
                 //campos que vienen de minuta correspondencia
-                MinutaCorrespondenciaEncontrar.residente = minutaCorrespondencia.residente;
+                MinutaCorrespondenciaEncontrar.residente = nuevoResidente;
                 MinutaCorrespondenciaEncontrar.tipoCorrespondencia = minutaCorrespondencia.tipoCorrespondencia;
                 MinutaCorrespondenciaEncontrar.personaEntrega = minutaCorrespondencia.personaEntrega;
                 MinutaCorrespondenciaEncontrar.personaRecibe = minutaCorrespondencia.personaRecibe;

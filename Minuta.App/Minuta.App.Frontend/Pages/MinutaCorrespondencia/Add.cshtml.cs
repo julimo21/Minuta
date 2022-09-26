@@ -39,6 +39,10 @@ namespace Minuta.App.Frontend.Pages
         }
         public IActionResult OnPost()
         {
+            /*if(!ModelState.IsValid)
+            {
+                return Page();
+            }*/
             fecha = DateTime.Now.ToString("yyyy-MM-dd");
             hora = DateTime.Now.ToString("hh:mm:ss tt");
             Residentes = repositorioResidente.GetAllResidente();

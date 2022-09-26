@@ -9,14 +9,14 @@ namespace Minuta.App.Frontend.Pages
     public class ListModel6 : PageModel
     {
         private readonly IRepositorioMinutaCorrespondencia repositorioMinutaCorrespondencia;
-        public IEnumerable<Minuta.App.Dominio.MinutaCorrespondencia> MinutaCorrespondencias{get;set;}
+        public IEnumerable<Minuta.App.Dominio.MinutaCorrespondencia> MinutaCorrespondencia{get;set;}
         public ListModel6(IRepositorioMinutaCorrespondencia repositorioMinutaCorrespondencia)
         {
             this.repositorioMinutaCorrespondencia = repositorioMinutaCorrespondencia;
         }
         public void OnGet()
         {
-            MinutaCorrespondencias = repositorioMinutaCorrespondencia.GetAllMinutaCorrespondencia();
+            MinutaCorrespondencia = repositorioMinutaCorrespondencia.GetAllMinutaCorrespondencia();
         }
     }
 }
