@@ -7,9 +7,9 @@ namespace Minuta.App.Persistencia.AppRepositorios
     {
         IEnumerable<MinutaCorrespondencia> GetAllMinutaCorrespondencia();
 
-        MinutaCorrespondencia AddMinutaCorrespondencia(MinutaCorrespondencia minutaCorrespondencia);
+        MinutaCorrespondencia AddMinutaCorrespondencia(MinutaCorrespondencia minutaCorrespondencia, string cedulaResidente);
         MinutaCorrespondencia GetMinutaCorrespondencia(int idMinutaCorrespondencia);
-        MinutaCorrespondencia UpdateMinutaCorrespondencia(MinutaCorrespondencia minutaCorrespondencia);
+        MinutaCorrespondencia UpdateMinutaCorrespondencia(MinutaCorrespondencia minutaCorrespondencia, string cedulaResidente);
         void DeleteMinutaCorrespondencia(int idMinutaCorrespondencia);
     }
 }

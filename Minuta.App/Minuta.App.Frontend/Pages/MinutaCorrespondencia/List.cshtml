@@ -1,0 +1,55 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.ListModel6
+@{
+}
+<h1>Minuta Correspondencias</h1><br>
+<a asp-page="./Add" class="btn btn-primary">Agregar Registro</a><br><br>
+<table class="table">
+    <tr align="center">
+        <th>ID</th>
+        <th>FECHA INGRESO</th>
+        <th>HORA INGRESO</th>
+        <th>ASUNTO</th>
+        <th>RESIDENTE</th>
+        <th>TIPO CORRESPONDENCIA</th>
+        <th>PERSONA ENTREGA</th>
+        <th>PERSONA RECIBE</th>
+        <th>FIRMA RECIBIDO</th>
+        <th>OBSERVACIONES</th>
+    </tr>
+    @foreach (var minutaCorrespondencia in Model.MinutaCorrespondencias)
+    {
+        <tr align="center">
+            <td>@minutaCorrespondencia.id</td>
+            <td>@minutaCorrespondencia.fecha</td>
+            <td>@minutaCorrespondencia.hora</td>
+            <td>@minutaCorrespondencia.asunto</td>
+            <td>@minutaCorrespondencia.residente.cedula</td>
+            <td>@minutaCorrespondencia.tipoCorrespondencia</td>
+            <td>@minutaCorrespondencia.personaEntrega</td>
+            <td>@minutaCorrespondencia.personaRecibe</td>
+            <td>@minutaCorrespondencia.firmaRecibido</td>
+            <td>@minutaCorrespondencia.observaciones</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-minutaCorrespondenciaId="@minutaCorrespondencia.id">
+                <i class="fas fa-info-circle"></i>
+                Detalle MinutaCorrespondencia
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-minutaCorrespondenciaId="@minutaCorrespondencia.id">
+                <i class="fas fa-info-circle"></i>
+                Editar
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-minutaCorrespondenciaId="@minutaCorrespondencia.id">
+                <i class="fas fa-info-circle"></i>
+                Eliminar
+                </a>
+            </td>
+            
+        </tr>
+    }
+</table>
