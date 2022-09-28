@@ -1,0 +1,30 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.AddModel7
+@{
+}
+<h1>Agregar Nuevo Evento: @Model.MinutaEventos.id</h1>
+<form method="post">
+    <input type="hidden" asp-for = "MinutaEventos.id"/>
+    <div class="form-group">
+        <label asp-for="MinutaEventos.fecha">FECHA DE INGRESO</label>
+        <input asp-for="MinutaEventos.fecha" class="form-control" value="@Model.fecha" readonly="readonly">
+        <span class="text-danger" asp-validation-for="MinutaEventos.fecha"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MinutaEventos.hora">HORA DE INGRESO</label>
+        <input asp-for="MinutaEventos.hora" class="form-control" value="@Model.hora" readonly="readonly">
+        <span class="text-danger" asp-validation-for="MinutaEventos.hora"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MinutaEventos.asunto">ASUNTO</label>
+        <input asp-for="MinutaEventos.asunto" class="form-control">
+        <span class="text-danger" asp-validation-for="MinutaEventos.asunto"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MinutaEventos.anotaciones">ANOTACIONES</label>
+        <input asp-for="MinutaEventos.anotaciones" class="form-control">
+        <span class="text-danger" asp-validation-for="MinutaEventos.anotaciones"></span>
+    </div><br>
+    <button type="submit" class="btn btn-primary">Grabar</button>
+</form><br>
+<a asp-page="./List" class="btn-default"> Lista de Eventos</a>

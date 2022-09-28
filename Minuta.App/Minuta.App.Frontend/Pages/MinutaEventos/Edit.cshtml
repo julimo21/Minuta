@@ -1,0 +1,26 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.EditModel7
+@{
+}
+<h1>Edición del Registro de la Minuta Eventos: @Model.MinutaEventos.id</h1>
+<form method="post">
+    <input type="hidden" asp-for = "MinutaEventos.id"/>
+    <div class="form-group">
+        <label asp-for="MinutaEventos.fecha">FECHA DE INGRESO</label>
+        <input asp-for="MinutaEventos.fecha" class="form-control" readonly="readonly">
+    </div>
+    <div class="form-group">
+        <label asp-for="MinutaEventos.hora">HORA DE INGRESO</label>
+        <input asp-for="MinutaEventos.hora" class="form-control" readonly="readonly">
+    </div>
+    <div class="form-group">
+        <label asp-for="MinutaEventos.asunto">ASUNTO</label>
+        <input asp-for="MinutaEventos.asunto" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="MinutaEventos.anotaciones">ANOTACIONES</label>
+        <input asp-for="MinutaEventos.anotaciones" class="form-control">
+    </div><br>
+    <button type="submit" class="btn btn-primary">Grabar</button>
+</form><br>
+<a asp-page="./List" class="btn-default">Minuta Eventos</a>

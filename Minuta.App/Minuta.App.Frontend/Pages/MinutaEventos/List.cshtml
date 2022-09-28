@@ -1,0 +1,45 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.ListModel7
+@{
+}
+<h1>Minuta Eventos</h1><br>
+<a asp-page="./Add" class="btn btn-primary">Agregar Evento</a><br><br>
+<table class="table">
+    <tr align="center">
+        <th>ID</th>
+        <th>FECHA INGRESO</th>
+        <th>HORA INGRESO</th>
+        <th>ASUNTO</th>
+        <th>ANOTACIONES</th>
+    </tr>
+    @foreach (var minutaEventos in Model.MinutaEventos)
+    {
+        <tr align="center">
+            <td>@minutaEventos.id</td>
+            <td>@minutaEventos.fecha</td>
+            <td>@minutaEventos.hora</td>
+            <td>@minutaEventos.asunto</td>
+            <td>@minutaEventos.anotaciones</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-minutaEventosId="@minutaEventos.id">
+                <i class="fas fa-info-circle"></i>
+                Detalle MinutaEventos
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-minutaEventosId="@minutaEventos.id">
+                <i class="fas fa-info-circle"></i>
+                Editar
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-minutaEventosId="@minutaEventos.id">
+                <i class="fas fa-info-circle"></i>
+                Eliminar
+                </a>
+            </td>
+            
+        </tr>
+    }
+</table>

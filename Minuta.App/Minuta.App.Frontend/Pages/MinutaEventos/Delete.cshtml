@@ -1,0 +1,11 @@
+﻿@page
+@model Minuta.App.Frontend.Pages.DeleteModel7
+@{
+}
+<h1>Eliminar Evento: @Model.MinutaEventos.id</h1>
+<form method="post">
+    <input type="hidden" asp-for = "MinutaEventos.id"/>
+    <p>¿Estás seguro de eliminar el evento?</p><br>
+    @* <input asp-for="MinutaCorrespondencia.id" class="form-control"> *@
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>
